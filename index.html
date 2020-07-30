@@ -1,0 +1,29 @@
+---
+layout: default
+
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+  <article class="post">
+  <h1>{{ post.title }}</h1>
+<br />
+  <div class="entry">
+    {{ post.content }}
+  </div>
+  <div class="author">
+    -{{ post.author }}
+  </div>
+ {% assign numbers = post.url| split: "/" %}
+ {% for number in numbers %}
+  {% assign latest=number %}
+{% endfor %}
+{% assign previous=latest| minus: 1 %}
+  <br><br>
+   <div class="prev"><a href="https://aajkakavi.in/{{ previous }}">&#8249; पिछली</a></div>
+
+</article>
+  {% break %}
+  {% endfor %}
+</div>
+{% include random.html %}

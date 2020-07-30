@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/atom+xml" title="aajkakavi" href="/feed.xml">
+    <link rel="icon" type="image/svg" href="https://raw.githubusercontent.com/TheSidhantGoyal/thesidhantgoyal.github.io/master/images/logo.svg"/>
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+
+      <div class="site-info">
+        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+        <p class="site-description">{{ site.description }}</p>
+      </div>
+    
+      <nav>
+        <a href="{{ site.baseurl }}/about">कवि </a>
+        <a href="{{ site.baseurl }}/submit">कविता भेजें</a>
+      </nav>
+    </header>
+  </div>
+</div>
+
+<div id="main" role="main" class="container">
+  {{ content }}
+</div>
+<div class="wrapper-footer">
+  <div class="container">
+    <footer class="footer">
+     <a href = "https://twitter.com/theaajkakavi"> <img src="/images/tw.svg" alt="Twitter" height="30" width="30"></a>
+<a href = "https://www.reddit.com/user/theaajkakavi/"> <img src="/images/reddit.svg" alt="Reddit" height="30" width="30"></a>
+<br>
+ <a href="{{ site.baseurl }}/privacy">निजता</a>&nbsp; |&nbsp; <a href="mailto:contact@aajkakavi.in">संपर्क</a>
+</footer>
+  </div>
+</div>
+
+</body>
+</html>
+

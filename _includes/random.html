@@ -1,0 +1,15 @@
+<html>
+<p style="text-align:center;">
+ <a href="javascript:void(0);" onclick="randTrigger()">विविध कविता</a>
+ </p>
+<script>
+function randTrigger() {
+  const max = {{ site.posts.size| minus: 1 }};
+  var chose = Math.floor(Math.random() * max) + 1;
+  if(chose == 404){var chose = 0};
+  var chosen = chose.toString();
+  window.location.href = "https://aajkakavi.in/" + chosen;
+  
+}
+</script>
+</html>
