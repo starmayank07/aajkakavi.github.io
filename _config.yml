@@ -59,6 +59,4 @@ exclude:
   - README.md
   - CNAME
   
-  future: false
-
 
