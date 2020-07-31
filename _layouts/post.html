@@ -17,6 +17,11 @@ layout: default
 {% endfor %}
 {% assign next=current| plus: 1 %}
 {% assign prev=current| minus: 1 %}
+{% if prev == 404 %}
+{% assign prev = 403 %}
+{% elsif next == 404 %}
+{% assign next = 405 %}
+{% endif %}
    <br><br>
    {% if prev != -1 %}
    <div class="prev"><a href="https://aajkakavi.in/{{ prev }}">&#8249; पिछली</a></div>
