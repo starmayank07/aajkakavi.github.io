@@ -2,7 +2,7 @@ name: Build as required
 
 on:
   schedule:
-   - cron: '25 22 15,30 * *'
+   - cron: '25 22 14,29 * *'
 jobs:
   curl:
     runs-on: ubuntu-latest
