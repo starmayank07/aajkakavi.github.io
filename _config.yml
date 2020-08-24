@@ -20,6 +20,7 @@ avatar: https://raw.githubusercontent.com/aajkakavi/aajkakavi.github.io/master/i
 url: https://aajkakavi.in/
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
